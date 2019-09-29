@@ -12,11 +12,11 @@ class fifthstage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fifthstage)
 
-        yesSalary.setOnClickListener {
-            startActivity(Intent(this,lastStage::class.java))
-        }
-        noSalary.setOnClickListener {
-            Toast.makeText(this,"Sorry you are not eligible for the loan. You must have atleast 6 months salary in your bank",Toast.LENGTH_LONG).show()
-        }
+//        yesSalary.setOnClickListener {
+//            startActivity(Intent(this,lastStage::class.java))
+//        }
+//        noSalary.setOnClickListener {
+//            Toast.makeText(this,"Sorry you are not eligible for the loan. You must have atleast 6 months salary in your bank",Toast.LENGTH_LONG).show()
+//        }
     }
 }

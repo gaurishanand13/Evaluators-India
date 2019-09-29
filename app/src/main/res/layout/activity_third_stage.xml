@@ -1,39 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
-        android:background="#B2DFDB"
+        android:background="#FAD7A0"
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".thirdStage">
-
     <TextView
-            android:layout_marginBottom="100dp"
+            android:visibility="gone"
+            android:id="@+id/congoTextView"
+            android:textStyle="bold"
             android:layout_gravity="center"
             android:gravity="center"
-            android:textSize="35sp"
-            android:textStyle="bold|italic|normal"
-            android:text="Do you have a Pan Card?"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/roboto_black"
+            android:text="Congratulations! \n You are eligible for the loan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    <RadioGroup
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <RadioButton
-                android:id="@+id/yesPancard"
-                android:textColor="@android:color/black"
-                android:textSize="40sp"
-                android:text="Yes"
+    <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/noCongo"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-        <RadioButton
-                android:id="@+id/noPanCard"
-                android:textSize="40sp"
-                android:text="No"
-                android:textColor="@android:color/black"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-    </RadioGroup>
+                android:layout_height="match_parent">
+            <TextView
+                    android:layout_marginTop="40dp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="28sp"
+                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/roboto_black"
+                    android:text="Sorry! \n You are not eligible for the loan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:id="@+id/MandatoyRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:fontFamily="@font/roboto_black"
+                        android:text="Documents Required"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:id="@+id/textViewMandatory"
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"
+                        android:text="Passport \nAadhar \nVoter ID \nDriving License"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:id="@+id/notMandatoyRequirements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <TextView
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:textSize="22sp"
+                        android:text="You must have any of these documents for your address proof"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                <TextView
+                        android:paddingLeft="10dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="25sp"
+                        android:text="Passport \nAadhar \nVoter ID \nDriving License"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
 </FrameLayout>

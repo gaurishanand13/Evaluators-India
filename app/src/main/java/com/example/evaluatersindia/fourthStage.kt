@@ -14,22 +14,22 @@ class fourthStage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_fourth_stage)
 
-        salarySlipCheckBox.setOnClickListener {
-            salarySlip = salarySlip!=true
-        }
-        bankStatementCheckBox.setOnClickListener {
-            bankStatement = bankStatement!=true
-        }
-
-        nextButtonRequirements.setOnClickListener {
-            if(salarySlip==false || bankStatement==false)
-            {
-                Toast.makeText(this,"You are not eligible for the loan if you don't have all the mentioned above documents",Toast.LENGTH_LONG).show()
-            }
-            else
-            {
-                startActivity(Intent(this,fifthstage::class.java))
-            }
-        }
+//        salarySlipCheckBox.setOnClickListener {
+//            salarySlip = salarySlip!=true
+//        }
+//        bankStatementCheckBox.setOnClickListener {
+//            bankStatement = bankStatement!=true
+//        }
+//
+//        nextButtonRequirements.setOnClickListener {
+//            if(salarySlip==false || bankStatement==false)
+//            {
+//                Toast.makeText(this,"You are not eligible for the loan if you don't have all the mentioned above documents",Toast.LENGTH_LONG).show()
+//            }
+//            else
+//            {
+//                startActivity(Intent(this,fifthstage::class.java))
+//            }
+//        }
     }
 }

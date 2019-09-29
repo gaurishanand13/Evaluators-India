@@ -12,13 +12,7 @@
             android:layout_gravity="center"
             android:layout_width="match_parent"
             android:layout_height="400dp">
-        <EditText
-                android:background="@android:color/white"
-                android:hint="If you have any other Loan enter here. If you don't have any previous loan click NEXT"
-                android:textSize="20sp"
-                android:gravity="start"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"/>
+
         <Button
                 android:textColor="@android:color/white"
                 android:background="@android:color/holo_blue_dark"
